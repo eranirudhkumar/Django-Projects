@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Home</title>
+    {% endblock title %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<div class="jumbotron"><h1><strong>Engineering Activity</strong></h1></div>
+<div class="container">
+    {% block content %}
+    <h1>All students-</h1>
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        {% for user in all_student %}
+        <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.mob}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    <a href="/blog/login/">Login</a>/ <a href="/blog/signup/">Signup</a>
+    {% endblock content %}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

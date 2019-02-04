@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+{% block title %}
+<title>Signup TemplateView</title>
+
+{% endblock title %}
+
+{% block content %}
+<h1>template view</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        {{st_form.as_p}}
+        <div>
+            <input class="btn btn-primary float-right" type="submit" value="Register">
+        </div>
+    </div>
+</form>
+
+<!--<form method="POST" class="post-form">-->
+<!--{% for field in st_form %}-->
+<!--<div class="form-group">-->
+<!--{{ field }}-->
+<!--</div>-->
+<!--{% endfor %}-->
+<!--</form>-->
+<script type="text/javascript">
+  $(function() {
+    $( ".datepicker1" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+      yearRange: "1900:2012"
+      // You can put more options here.
+
+    });
+  });
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog- Signup</title>
+</head>
+<body>
+<h1>Register Student-</h1>
+
+<form action="/blog/signup/" method="post">
+    {% csrf_token %}
+    <label for="name_id">Name:</label>
+    <input type="text" name="name" id="name_id" placeholder="Name" required>
+
+    <br>
+
+    <label for="uname_id">Uname:</label>
+    <input type="text" name="uname" id="uname_id" placeholder="User name" required>
+
+    <br>
+
+    <label for="email_id">Email:</label>
+    <input type="email" name="email" id="email_id" placeholder="Email" required>
+
+    <br>
+    <label for="phone_id">Phone:</label>
+    <input type="number" name="phone" id="phone_id" placeholder="Phone" required>
+
+    <br>
+    <label for="psw_id">Password:</label>
+    <input type="password" name="psw" id="psw_id" placeholder="Password" required>
+
+    <br>
+    <input type="submit" value="Register">
+</form>
+all ready account- <a href="/blog/login/">Login</a>
+<a href="/blog/">back</a>
+</body>
+</html>

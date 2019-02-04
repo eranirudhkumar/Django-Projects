@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Login Student-</h1>
+
+        {% if message is not None %}
+        {{message}}
+        {% endif %}
+
+        <form action="#" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="uname_id">User Name:</label>
+                <input class="form-control" type="text" name="uname" id="uname_id" placeholder="User name" required>
+            </div>
+            <!--<br>-->
+            <div class="form-group">
+                <label for="psw_id">Password:</label>
+                <input class="form-control" type="password" name="psw" id="psw_id" placeholder="Password" required>
+            </div>
+            <!--<br>-->
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Login">
+            </div>
+        </form>
+        <a href="/blog/signup/">Signup</a>
+        <a href="/blog/">back</a>
+    </div>
+    <div class="col">
+        <h1>Login Student-</h1>
+
+        {% if message is not None %}
+        {{message}}
+        {% endif %}
+
+        <form action="#" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="uname_id">User Name:</label>
+                <input class="form-control" type="text" name="uname" id="uname_id" placeholder="User name" required>
+            </div>
+            <!--<br>-->
+            <div class="form-group">
+                <label for="psw_id">Password:</label>
+                <input class="form-control" type="password" name="psw" id="psw_id" placeholder="Password" required>
+            </div>
+            <!--<br>-->
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Login">
+            </div>
+        </form>
+        <a href="/blog/signup/">Signup</a>
+        <a href="/blog/">back</a>
+    </div>
+</div>
+{% endblock %}
