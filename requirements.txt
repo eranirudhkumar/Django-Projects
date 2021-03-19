@@ -49,7 +49,7 @@ Django==1.11.6
 django-allauth==0.38.0
 django-crispy-forms==1.7.2
 django-storages==1.6.5
-djangorestframework==3.8.2
+djangorestframework==3.11.2
 docutils==0.14
 ecdsa==0.13
 entrypoints==0.2.3
