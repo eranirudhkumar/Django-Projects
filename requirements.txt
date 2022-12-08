@@ -21,7 +21,7 @@ boto3==1.4.7
 botocore==1.7.32
 Bottleneck==1.2.1
 cachetools==2.1.0
-certifi==2018.10.15
+certifi==2022.12.7
 cfe==0.0.15
 cffi==1.11.4
 chardet==3.0.4
